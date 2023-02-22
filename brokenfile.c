@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 int main(int argc, char** argv) {
   char* name;
-  int j;
 
-  printf("How many times do you want the letter j?   ");
-  scanf("%i", &j);
+  printf("Lets store and print some j's!\n");
 
-
-  for (int i = 0; i <= j; i++) {
-    *(name+i) = 'j';
-  }
+  strcpy(name, "jjjjj");
 
   printf("Here are my j's %s\n", name);
 }
