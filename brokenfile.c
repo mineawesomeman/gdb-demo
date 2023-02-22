@@ -9,6 +9,7 @@ int main(int argc, char** argv) {
   printf("How many times do you want the letter j?   ");
   scanf("%i", &j);
 
+
   for (int i = 0; i <= j; i++) {
     *(name+i) = 'j';
   }
